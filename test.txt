@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-test_test
-=======
-test_test_test_test_test_test_test_test_test
->>>>>>> local_git
