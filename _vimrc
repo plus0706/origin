@@ -27,6 +27,8 @@ call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
 call dein#add('kana/vim-submode')
 call dein#add('jistr/vim-nerdtree-tabs')
+call dein#add('davidhalter/jedi-vim', {'on_ft': 'python'}) " pythonの高機能な補完機能。
+call dein#add('vim-syntastic/syntastic') " 構文チェック。linterは適宜追加。
 call dein#end()
 call dein#save_state()
 endif
