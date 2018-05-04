@@ -1,0 +1,82 @@
+history > Desktop/history.txt
+less Desktop/history.txt 
+fzf
+ls -la
+Ø
+brew install fzf
+source .config/fish/config.fish 
+vim .config/fish/config.fish 
+set -U FZF_LEGACY_KEYBINDINGS 0
+fisher fzf
+python --version
+pyenv global 3.6.5
+top
+pyenv install 3.6.5
+pyenv install -l
+pyenv --version
+pyenv install 
+exit
+history > Desktop/history.txt
+history
+git clone git://github.com/yyuu/pyenv.git ~/.pyenv
+cd
+vim config.fish
+pwd
+cd fish
+cd .config
+cd conf.d
+cd .config/fish/
+fisher ls-remote
+gvim
+vim
+ln -sf origin/_vimrc .vimrc
+ln -sf origin/_gvimrc .gvimrc
+rm -rf _vimrc
+rm -rf _gvimrc
+mvim
+mkdir vimfiles
+less origin/_vimrc
+less origin/_gvimrc
+less _gvimrc
+ln -sf _gvimrc ../_gvimrc
+ln -sf _vimrc ../_vimrc
+cd origin
+rm -rf .vimrc
+rm -rf .gvimrc
+cd..
+less _vimrc
+vim .gvimrc
+vim .vimrc
+ln -sf _vimrc ../.vimrc
+ln -sf _gvimrc ../.gvimrc
+cd orign
+cd .vimrc
+less .vimrc
+less .gvimrc
+ln -s _vimrc ../.vimrc
+ln -s _gvimrc ../.gvimrc
+cd ../
+cd ../C
+cd vim
+cd /Applications/MacVim.app/Contents/Resources/
+find / -name macvim
+whereis macvim
+cd 
+cd /Library/Application\ Support/
+git clone https://github.com/plus0706/origin.git
+cd git
+fisher install omf/theme-batman
+fisher install omf/theme-bat
+fisher install omf/bat
+fisher z
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+fish_config
+defaults write com.apple.Safari IncludeInternalDebugMenu 1
+Software Update
+software Update
+xcode-select --install
+killall Finder
+defaults write com.apple.finder AppleShowAllFiles -boolean true
+df -ht
+sudo trimforce enable
+df -hT
