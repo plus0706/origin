@@ -1,0 +1,65 @@
+#TRIMの有効化
+sudo trimforce enable
+
+#DS_storeの無効化
+defaults write com.apple.desktopservices DSDontWriteNetworkStores True
+killall Finder
+
+#隠しファイルの表示
+defaults write com.apple.finder AppleShowAllFiles TRUE
+killall Finder
+
+#brewの導入
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+#xcode(CLI)の導入
+xcode-select --install
+
+#brew、caskによるアプリケーションの導入
+brew install caskroom/cask/brew-cask
+brew install git
+brew cask install filezilla
+brew cask install google-chrome
+brew cask install iterm2
+brew cask install google-japanese-ime
+brew cask install slack
+brew cask install virtualbox
+brew cask install vlc
+brew cask install kindle
+brew install fish
+brew install fzf
+
+#ユーザーのgit repository導入
+git clone https://github.com/plus0706/origin.git
+
+#safariの開発者メニュー有効化
+defaults write com.apple.Safari IncludeInternalDebugMenu 1
+
+#fisherの導入
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+
+#fisherによるテーマの導入(batman)
+fisher install omf/theme-batman
+
+#repository上のvimrc、gvimrcからシンボリックリンク生成
+ln -sf origin/_vimrc .vimrc
+ln -sf origin/_gvimrc .gvimrc
+
+#pyenvの導入
+git clone git://github.com/yyuu/pyenv.git ~/.pyenv
+pyenv install -l
+pyenv install x.x.x
+vim .config/fish/config.fish
+---追記内容---
+set -x PATH $HOME/.pyenv/bin $PATH
+. (pyenv init - | psub)
+---追記内容ここまで---
+
+#fzfの導入
+brew install fzf
+fisher fzf
+
+#config.fishにfzfのコンフィグ追加
+vim .config/fish/config.fish 
+set -U FZF_LEGACY_KEYBINDINGS 0
+source .config/fish/config.fish
