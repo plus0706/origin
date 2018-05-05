@@ -32,6 +32,10 @@ brew install fzf
 #ユーザーのgit repository導入
 git clone https://github.com/plus0706/origin.git
 
+#git config 追加
+git config --global user.name plus0706
+git config --global user.email t060758@gmail.com
+
 #.netrcのシンボリックリンク生成
 ln -sf origin/.netrc .
 
