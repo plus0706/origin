@@ -32,6 +32,9 @@ brew install fzf
 #ユーザーのgit repository導入
 git clone https://github.com/plus0706/origin.git
 
+#.netrcのシンボリックリンク生成
+ln -sf origin/.netrc .
+
 #safariの開発者メニュー有効化
 defaults write com.apple.Safari IncludeInternalDebugMenu 1
 
@@ -49,11 +52,13 @@ ln -sf origin/_gvimrc .gvimrc
 git clone git://github.com/yyuu/pyenv.git ~/.pyenv
 pyenv install -l
 pyenv install x.x.x
-vim .config/fish/config.fish
----追記内容---
-set -x PATH $HOME/.pyenv/bin $PATH
-. (pyenv init - | psub)
----追記内容ここまで---
+ln -sf origin/config.fish .config/fish/
+
+#vim .config/fish/config.fish
+#---追記内容---
+#set -x PATH $HOME/.pyenv/bin $PATH
+#. (pyenv init - | psub)
+#---追記内容ここまで---
 
 #fzfの導入
 brew install fzf
