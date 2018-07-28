@@ -40,6 +40,9 @@ if dein#check_install()
  call dein#install()
 endif
 
+ "0始まりの数字を8進数から10進数に変更
+ set nf=""
+
  " スワップファイルを生成しない 
  set noswapfile 
  set nobackup
